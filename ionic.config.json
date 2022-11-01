@@ -1,0 +1,8 @@
+{
+  "name": "tiendas",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "fa2b127d"
+}
