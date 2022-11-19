@@ -5,5 +5,29 @@
 </ion-header>
 
 <ion-content>
-
+  <ion-list>
+    <ion-item>
+      <div class="">
+        <ion-card-title class="titulo">TIENDAS</ion-card-title>
+        <ion-card-subtitle>COMIDAS</ion-card-subtitle>
+      </div>
+    
+    </ion-item>
+  </ion-list>
+  <div class="container">
+    <ion-item style="background-color: white;" *ngFor="let col of coleccionTiendas">
+      <ion-thumbnail >
+        <img style="width: 50px;" alt="Silhouette of mountains" src="https://www.cocinacaserayfacil.net/wp-content/uploads/2020/04/Recetas-de-comidas-para-ni%C3%B1os.jpg" />
+      </ion-thumbnail>
+      <ion-label><ion-card style="background-color: #A8CF45;">
+        <ion-card-header  *ngFor="let col of coleccionTiendas">
+          <ion-card-title style="color:rgb(74, 72, 72); text-align: center;"><strong>{{col.ubicacion}}</strong> </ion-card-title>
+          <ion-card-subtitle style="color:rgb(74, 72, 72);">Ubicación:{{col.ubicacion}}</ion-card-subtitle>
+          <ion-card-subtitle style="color:rgb(74, 72, 72);">Teléfono:{{col.telefono}} </ion-card-subtitle>
+          <ion-card-subtitle style="color:rgb(74, 72, 72);">Horarios:{{col.disponibilidad}}</ion-card-subtitle>
+        </ion-card-header>
+      </ion-card>
+    </ion-label>
+    </ion-item>
+  </div>
 </ion-content>
